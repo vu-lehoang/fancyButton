@@ -1,0 +1,25 @@
+.image{
+    position: relative;
+    display: inline-block;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+}
+.image::after{
+    display: inherit;
+    position: absolute;
+    content: " "attr(alt)" Not Found";
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 300px;
+    padding: 10px 20px 10px 45px;
+    border: 1px dashed #888;
+    background-color: #f0f0f0;
+    background-image: url(/assets/image/noimage.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 15px 0px;
+    z-index: 1;
+}

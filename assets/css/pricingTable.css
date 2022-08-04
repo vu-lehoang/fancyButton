@@ -1,0 +1,30 @@
+/* .section--table{
+    display: flex;
+    justify-content: space-between;
+} */
+.pricing-table{
+
+    font-size: 1.6rem;
+    
+}
+.pricing-table::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.pricing-table  > div{
+    display: block;
+    float: left;
+    width: 48%;
+    min-height: 1px;
+    background-color: #fff;
+    color: #555;
+}
+.pricing-tabke > div:not(:last-child){
+    margin-right: 2%;
+}
+.pricing-block{
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
